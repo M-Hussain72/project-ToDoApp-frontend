@@ -1,0 +1,140 @@
+
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+  }
+
+*,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    padding: 0;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #171321;
+    text-align: center;
+
+}
+section{
+    border: 2px soild black;
+    background-color:var(--white);
+    min-height: 500px;
+    max-height: auto;
+    padding: 2rem 0;
+}
+h1{
+    margin: 0;
+    padding: 2rem;
+    font-size:xx-large;
+    color: #0d0f13;
+}
+.borders{
+    border-bottom: 2px groove;
+    width:350px ;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.box{
+    background-color:pink;
+    border-color: #cd86c5;
+    color:#d7118be0;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    width: 200px;
+    margin: 0.5rem auto;
+}
+/*--- add  ToDo-- */
+.items,.add_todo{
+    width:fit-content;
+    margin:1rem auto;
+    border-radius: 4px;
+    /* background-color:chartreuse; */
+
+}
+ input[type=text]{
+    margin:0;
+    border:1px solid #bfb9b9;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px;
+    padding: 7px 10px;
+}
+
+input[type=text]:hover{
+    border-style:inset;
+    border-color: skyblue;
+    border-width: 2px;
+}
+
+input[type=text] :focus
+{
+   border: 2px solid rgb(110, 251, 232);
+}
+
+
+.add{
+    margin: 0;
+    color: var(--white);
+    font-size: medium;
+    font-weight: bold;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    padding: 7.2px 11px;
+    border: none;
+    background-color: rgb(0, 255, 8);
+}
+.add:hover{
+    background-color: rgba(128, 255, 0, 0.912);
+}
+
+/* ----items---- */
+fieldset{
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin:0;
+    width: 300px;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px groove;
+}
+button{
+    
+    text-align: right;
+      margin-left: auto;
+    color: var(--white);
+    font-size: medium;
+    font-weight: bold;
+    background-color:var(--magenta);
+    border-radius: 5px;
+    border-color:#ff17e4 ;
+    border-style: none ;
+    padding: 7.2px 11px;
+    
+}
+
+button:hover{
+    background-color:rgb(243, 49, 49);
+}
+
+fieldset span{
+    display: inline;
+    text-align: left;
+    height:20px;
+    width:150px ;
+    padding:0 1rem;
+    font-weight: lighter;
+    font-size: larger;
+}
